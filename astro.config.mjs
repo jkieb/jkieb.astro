@@ -9,6 +9,11 @@ export default defineConfig({
   output: 'static',
   integrations: [sitemap()],
   build: {
-    assets: '_assets'
+    assets: 'assets'
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0
+    }
   }
 });
