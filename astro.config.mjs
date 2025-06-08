@@ -4,5 +4,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://jkieb.github.io',
+  base: '/jkieb-astro',
+  output: 'static',
   integrations: [sitemap()]
 });
