@@ -7,5 +7,8 @@ export default defineConfig({
   site: 'https://jkieb.github.io',
   base: '/jkieb-astro',
   output: 'static',
-  integrations: [sitemap()]
+  integrations: [sitemap()],
+  build: {
+    assets: '_assets'
+  }
 });
